@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorMainPrimary">#840D33</color>
+    <color name="colorMainPrimaryDark">#770828</color>
+    <color name="colorMainAccent">#ffa726</color>
+    <color name="mainScreenLightBlue">#42A5F5</color>
+    <color name="mainScreenDarkBlue">#BE3031</color>
+
+
+    <color name="textSecondaryColor">#42A5F5</color>
+    <color name="textPrimaryColor">#6C6A69</color>
+    <color name="textSettingsSecondary">#D6616D</color>
+    <color name="dividerColor">#BDBDBD</color>
+    <color name="textDarkGrey">#536E7A</color>
+    <color name="viewPagerTabBlue">#D6616D</color>
+    <color name="mainScreenText">#D4E8F4</color>
+    <color name="slideLockText">#BBDEFB</color>
+    <color name="slideLockBottomText">#1565C0</color>
+
+    <color name="white">#ffffff</color>
+    <color name="transparentWhite">#7Dffffff</color>
+    <color name="darkBlue_pin">#1565C0</color>
+    <color name="darkBlue_audio_control">#0D47A1</color>
+    <color name="darkGrey">#414144</color>
+    <color name="errorRed">#ef5350</color>
+    <color name="backgroundGrey">#E8E8E8</color>
+    <color name="transparentVault">#80840D33</color>
+    <color name="placeholderColor">#EBEBEB</color>
+    <color name="tickerHiderColor">#37474F</color>
+    <color name="tickerHiderMessageColor">#42A5F5</color>
+    <color name="transparentBlack">#80000000</color>
+
+</resources>

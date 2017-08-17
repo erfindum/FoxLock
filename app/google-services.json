@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "408066215293",
+    "firebase_url": "https://foxlock-1b35e.firebaseio.com",
+    "project_id": "foxlock-1b35e",
+    "storage_bucket": "foxlock-1b35e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:408066215293:android:5baa07afded37cb2",
+        "android_client_info": {
+          "package_name": "com.smartfoxitsolutions.foxlock"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "408066215293-iil7qvv5har2d9ed80e83v9jbrf3s3pk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.smartfoxitsolutions.foxlock",
+            "certificate_hash": "0e758a3446e066b4c004b56bc81352dc009d9c5b"
+          }
+        },
+        {
+          "client_id": "408066215293-h1j3bclmb8c6e5qtjl2ckm8aq2139apd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0lqUtzY0xAhw5yuQo3r7H4PiRw_lzZBQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "408066215293-h1j3bclmb8c6e5qtjl2ckm8aq2139apd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<string-array name="nodeColors" >
+    <item>#AB47BC</item>
+    <item>#5C6BC0</item>
+    <item>#26A69A</item>
+    <item>#29B6F6</item>
+    <item>#D4E157</item>
+    <item>#9CCC65</item>
+    <item>#ef5350</item>
+    <item>#FFEE58</item>
+    <item>#FFA726</item>
+</string-array>
+
+    <string-array name="nodeSelectedColors">
+        <item>#7B1FA2</item>
+        <item>#303F9F</item>
+        <item>#00796B</item>
+        <item>#0288D1</item>
+        <item>#AFB42B</item>
+        <item>#388E3C</item>
+        <item>#d32f2f</item>
+        <item>#FBC02D</item>
+        <item>#F57C00</item>
+    </string-array>
+
+</resources>

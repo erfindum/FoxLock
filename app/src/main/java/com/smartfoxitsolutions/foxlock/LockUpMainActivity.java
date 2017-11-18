@@ -26,6 +26,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.smartfoxitsolutions.foxlock.dialogs.GrantUsageAccessDialog;
 import com.smartfoxitsolutions.foxlock.dialogs.OverlayPermissionDialog;
@@ -123,8 +124,11 @@ public class LockUpMainActivity extends AppCompatActivity {
         loyaltyBonusButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 startActivity(new Intent(getBaseContext(), LoyaltyBonusMain.class));
                 shouldTrackUserPresence = false;
+
+                //Toast.makeText(LockUpMainActivity.this,"Coming Soon",Toast.LENGTH_SHORT).show();
             }
         });
         faqButton.setText(getString(R.string.main_screen_activity_faq_button_text));
@@ -136,6 +140,7 @@ public class LockUpMainActivity extends AppCompatActivity {
                 shouldTrackUserPresence = false;
             }
         });
+        faqButton.setVisibility(View.INVISIBLE);
 
         Typeface typeface = Typeface.createFromAsset(getAssets(),"fonts/arquitectabook.ttf");
         appsCount.setTypeface(typeface);

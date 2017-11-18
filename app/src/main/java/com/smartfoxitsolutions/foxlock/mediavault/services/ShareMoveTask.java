@@ -72,7 +72,7 @@ public class ShareMoveTask implements Runnable {
         currentPosition=0;
         timestamp = new AtomicLong(System.currentTimeMillis());
         String databasePath = Environment.getExternalStorageDirectory()+ File.separator
-                +".lockup"+File.separator+"vault_db";
+                +".foxlock"+File.separator+"vault_db";
         vaultDatabaseHelper = new VaultDbHelper(context.getApplicationContext(),databasePath,null,1);
         vaultDb = vaultDatabaseHelper.getWritableDatabase();
     }
@@ -236,17 +236,17 @@ public class ShareMoveTask implements Runnable {
             String extension = dataPath.substring(dataPath.lastIndexOf(".") + 1);
             String vaultFileName = String.valueOf(getFileTimeStamp());
             String destPathDummy = Environment.getExternalStorageDirectory() + File.separator
-                    + ".lockup" + File.separator + getMediaFolder(mediaType) + File.separator
+                    + ".foxlock" + File.separator + getMediaFolder(mediaType) + File.separator
                     + uniqueBucketId + File.separator + originalFileName + "." + extension;
             String destPath = Environment.getExternalStorageDirectory() + File.separator
-                    + ".lockup" + File.separator + getMediaFolder(mediaType) + File.separator
+                    + ".foxlock" + File.separator + getMediaFolder(mediaType) + File.separator
                     + uniqueBucketId + File.separator + vaultFileName;
             String thumbnailPathDummy = Environment.getExternalStorageDirectory() + File.separator
-                    + ".lockup" + File.separator + getMediaFolder(mediaType) + File.separator
+                    + ".foxlock" + File.separator + getMediaFolder(mediaType) + File.separator
                     + uniqueBucketId + File.separator + ".thumbs" + File.separator + uniqueBucketId
                     + File.separator + originalFileName + "." + "jpg";
             String thumbnailPath = Environment.getExternalStorageDirectory() + File.separator
-                    + ".lockup" + File.separator + getMediaFolder(mediaType) + File.separator
+                    + ".foxlock" + File.separator + getMediaFolder(mediaType) + File.separator
                     + uniqueBucketId + File.separator + ".thumbs" + File.separator + uniqueBucketId
                     + File.separator + vaultFileName;
             currentVaultMediaFile = destPathDummy;
@@ -361,17 +361,17 @@ public class ShareMoveTask implements Runnable {
         String vaultFileName = String.valueOf(getFileTimeStamp());
 
         String destPathDummy = Environment.getExternalStorageDirectory() + File.separator
-                + ".lockup" + File.separator + getMediaFolder(mediaType) + File.separator
+                + ".foxlock" + File.separator + getMediaFolder(mediaType) + File.separator
                 + uniqueBucketId + File.separator + originalFileName + "." + extension;
         String destPath = Environment.getExternalStorageDirectory() + File.separator
-                + ".lockup" + File.separator + getMediaFolder(mediaType) + File.separator
+                + ".foxlock" + File.separator + getMediaFolder(mediaType) + File.separator
                 + uniqueBucketId + File.separator + vaultFileName;
         String thumbnailPathDummy = Environment.getExternalStorageDirectory() + File.separator
-                + ".lockup" + File.separator + getMediaFolder(mediaType) + File.separator
+                + ".foxlock" + File.separator + getMediaFolder(mediaType) + File.separator
                 + uniqueBucketId + File.separator + ".thumbs" + File.separator + uniqueBucketId
                 + File.separator + originalFileName + "." + "jpg";
         String thumbnailPath = Environment.getExternalStorageDirectory() + File.separator
-                + ".lockup" + File.separator + getMediaFolder(mediaType) + File.separator
+                + ".foxlock" + File.separator + getMediaFolder(mediaType) + File.separator
                 + uniqueBucketId + File.separator + ".thumbs" + File.separator + uniqueBucketId
                 + File.separator + vaultFileName;
 

@@ -151,7 +151,7 @@ public class MediaVaultAlbumFragment extends Fragment implements LoaderManager.L
 
             mediaVaultBuckRecycler.setAdapter(moPubAdapter);
 
-            moPubAdapter.loadAds("ea1ea6ae342a4dd295aec2cdd8da905b");
+           // moPubAdapter.loadAds("ea1ea6ae342a4dd295aec2cdd8da905b");
             if(data.getCount()<=0){
                 loadEmptyPlaceholder();
             }

@@ -89,7 +89,7 @@ public class SlideLockActivity extends FragmentActivity implements View.OnTouchL
         setTrackingDetails();
         long adInterval = appPrefs.getLong(AppLockModel.SWIPE_LOCK_AD_DISPLAY,0);
         if(System.currentTimeMillis()>=adInterval){
-            requestAd();
+            //requestAd();
         }else{
             changeClockPosition();
         }

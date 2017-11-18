@@ -37,7 +37,7 @@ public class AppUpdateService extends FirebaseMessagingService {
                     Log.d("LockFireService", entry.getKey() + " Key " + entry.getValue() + " Value");
                     String key = entry.getKey();
                     String value = entry.getValue();
-                    String title="LockUp";
+                    String title="FoxLock";
                     String body = "Open to lock apps";
                     if(key.equals(AppLoaderActivity.UPDATE_APP_CLOUD_KEY)) {
                         if (remoteMessage.getNotification() != null) {

@@ -198,7 +198,7 @@ public class MediaVaultAlbumActivity extends AppCompatActivity {
         public void run() {
             String[] folders = {".image",".audio",".video"};
             File lockDirectory = new File(Environment.getExternalStorageDirectory()+File.separator
-                                    +".lockup");
+                                    +".foxlock");
             boolean isDirectoryCreated = false;
             if(!lockDirectory.exists()){
                isDirectoryCreated = lockDirectory.mkdirs();

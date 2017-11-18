@@ -44,7 +44,7 @@ public class MediaDeleteTask implements Runnable {
         this.mediaType = media;
         this.selectedMediaId = SelectedMediaModel.getInstance().getSelectedMediaIdList();
         String databasePath = Environment.getExternalStorageDirectory()+ File.separator
-                +".lockup"+File.separator+"vault_db";
+                +".foxlock"+File.separator+"vault_db";
         vaultDatabaseHelper = new VaultDbHelper(context.getApplicationContext(),databasePath,null,1);
         vaultDb = vaultDatabaseHelper.getWritableDatabase();
     }

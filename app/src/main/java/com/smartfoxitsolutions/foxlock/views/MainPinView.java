@@ -118,8 +118,8 @@ public class MainPinView extends FrameLayout implements View.OnClickListener{
         forgotPasswordButton = (Button) findViewById(R.id.main_pin_lock_forgot_button);
         selectedPin = "";
         AdView adView = (AdView) findViewById(R.id.main_pin_lock_ad);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        adView.loadAd(adRequest);
+       /* AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest); */
         pinPassCode = prefs.getString(AppLockModel.USER_SET_LOCK_PASS_CODE,"noPin");
         salt = prefs.getString(AppLockModel.DEFAULT_APP_BACKGROUND_COLOR_KEY,"noColor");
         digitTypFace = Typeface.createFromAsset(activity.getAssets(),"fonts/arquitectabook.ttf");

@@ -64,7 +64,7 @@ import static android.content.Context.MODE_PRIVATE;
  * Created by RAAJA on 29-01-2017.
  */
 
-public class LoyaltyUserProfileFragment extends Fragment {
+public class LoyaltyUserProfileFragment extends Fragment implements ViewTreeObserver.OnGlobalLayoutListener {
 
     private TextView fullName,pointsEarned, redeemInfo;
     private CardView paypalCard, paytmCard, pointInfoCard;
@@ -177,18 +177,18 @@ public class LoyaltyUserProfileFragment extends Fragment {
     }
 
     void setViewTreeObserver(){
-        final ViewTreeObserver viewObserver = mainLayout.getViewTreeObserver();
-        viewObserver.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
-            @Override
-            public void onGlobalLayout() {
-                if(activity!=null) {
-                    pointsInfoAnimateWidth = (int) getResources().getDimension(R.dimen.tenDpDimension);
-                    pointsInfoCardDefaultWidth = pointInfoCard.getWidth() - pointsInfoButton.getWidth();
-                    pointInfoCard.setX(pointsInfoCardDefaultWidth);
-                    pointInfoCard.setVisibility(View.VISIBLE);
-                }
-            }
-        });
+        mainLayout.getViewTreeObserver().addOnGlobalLayoutListener(this);
+    }
+
+    @Override
+    public void onGlobalLayout() {
+        if(activity!=null) {
+            pointsInfoAnimateWidth = (int) getResources().getDimension(R.dimen.tenDpDimension);
+            pointsInfoCardDefaultWidth = pointInfoCard.getWidth() - pointsInfoButton.getWidth();
+            pointInfoCard.setX(pointsInfoCardDefaultWidth);
+            pointInfoCard.setVisibility(View.VISIBLE);
+        }
+        mainLayout.getViewTreeObserver().removeOnGlobalLayoutListener(this);
     }
 
     void openPointsInfo(){

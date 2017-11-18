@@ -25,11 +25,13 @@ import android.view.WindowManager;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.facebook.ads.AdSettings;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import com.mopub.nativeads.FacebookAdRenderer;
 import com.mopub.nativeads.MoPubNative;
 import com.mopub.nativeads.MoPubStaticNativeAdRenderer;
 import com.mopub.nativeads.NativeAd;
@@ -617,6 +619,7 @@ public class AppLockingService extends Service implements Handler.Callback, OnPi
                 .privacyInformationIconImageId(R.id.native_ad_daa_icon_image)
                 .build();
 
+
         MoPubStaticNativeAdRenderer adRenderer = new MoPubStaticNativeAdRenderer(viewBinder);
 
         moPubNativeOne.registerAdRenderer(adRenderer);
@@ -735,10 +738,10 @@ public class AppLockingService extends Service implements Handler.Callback, OnPi
     }
 
     private void requestInterstitialAd(){
-        AdRequest adRequest = new AdRequest.Builder()//.addTestDevice("A04B6DE7DDFED7231620C0AA9BCF67EC")
+      /*  AdRequest adRequest = new AdRequest.Builder()//.addTestDevice("A04B6DE7DDFED7231620C0AA9BCF67EC")
                 //.addTestDevice("C4BA58CBC40E4ECD07EC147C825FB9D4")
                 .build();
-        interstitialAd.loadAd(adRequest);
+        interstitialAd.loadAd(adRequest); */
     }
 
     private final class AppLockReceiver extends BroadcastReceiver {

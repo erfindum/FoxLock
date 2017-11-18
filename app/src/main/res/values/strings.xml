@@ -24,9 +24,16 @@
     <string name="settings_activity_relock_summery">Re-lock apps when screen locked</string>
     <string name="settings_activity_change_pin_summery">PIN enabled</string>
     <string name="settings_activity_change_pattern_summery">Pattern enabled</string>
-    <string name="settings_activity_prevent_uninstall_title">Prevent LockUp Uninstall</string>
+    <string name="settings_activity_prevent_uninstall_title">Prevent FoxLock Uninstall</string>
     <string name="settings_activity_prevent_uninstall_summery">It is highly recommended to enable this protection. This prevents
-    unauthorized users or apps from uninstalling LockUp </string>
+    unauthorized users or apps from uninstalling FoxLock </string>
+    <string name="settings_prevent_uninstall_alert_title">Device Administrator Permission Required</string>
+    <string name="settings_prevent_uninstall_alert_message">By enabling this permission no user sensitive data or password is changed or deleted by FoxLock.
+    The sole purpose for enabling this permission, is to prevent other 3rd party apps to uninstall FoxLock by mistake.
+    \n\n Note: The Device Administrator permission can be disabled anytime inside FoxLock by navigating to FoxLock Settings and disabling
+        \"Prevent FoxLock Uninstall\" option.
+    </string>
+    <string name="settings_prevent_uninstall_positive">ACTIVATE</string>
 
     <!-- SettingsActivityDialog -->
     <string name="settings_dialog_finger_negative_header">Unable to switch on</string>
@@ -36,7 +43,7 @@
     <string name="settings_dialog_finger_negative_text">GOT IT</string>
 
     <!-- Set Email Activity -->
-    <string name="set_email_activity_info">LockUp recommends you to add recovery email, to reset the pin/pattern when you forget it.
+    <string name="set_email_activity_info">FoxLock recommends you to add recovery email, to reset the pin/pattern when you forget it.
                                             Note: Only recovery email is sent to the email address you provide</string>
     <string name="set_email_activity_header">Set Up Recovery Email</string>
     <string name="set_email_activity_add_email">Submit</string>
@@ -72,9 +79,9 @@
     <string name="main_screen_activity_app_lock_button_text">AppLock</string>
     <string name="main_screen_activity_vault_button_text">Vault</string>
     <string name="main_screen_activity_settings_button_text">Settings</string>
-    <string name="main_screen_activity_loyalty_button_text">Loyalty Bonus</string>
+    <string name="main_screen_activity_loyalty_button_text">Gift</string>
     <string name="main_screen_activity_video_button_text">How Loyalty Bonus Works</string>
-    <string name="main_screen_activity_app_name_text">LockUp</string>
+    <string name="main_screen_activity_app_name_text">FoxLock</string>
     <string name="main_screen_activity_app_name_summery">Lock Apps and Hide Media</string>
     <string name="main_screen_activity_app_info_summery">Learn more about Loyalty Bonus</string>
     <string name="main_screen_activity_app_lock_info_On">ON</string>
@@ -118,38 +125,38 @@
     <string name="appLock_activity_installed_apps_empty">NO NEW APPS INSTALLED</string>
     <string name="appLock_activity_checked_apps_empty">NO NEW APPS LOCKED</string>
     <string name="appLock_activity_usage_dialog_message">
-        In Android Lollipop(5.0) and above Usage Access permission is needed for LockUp to lock installed apps
+        In Android Lollipop(5.0) and above Usage Access permission is needed for FoxLock to lock installed apps
     </string>
      <string name="appLock_activity_overlay_dialog_message">
-        LockUp requires permission to draw over apps for the AppLock to lock installed apps
+        FoxLock requires permission to draw over apps for the AppLock to lock installed apps
     </string>
      <string name="appLock_activity_notif_dialog_message">
-        LockUp requires permission to hide and lock incoming notifications
+        FoxLock requires permission to hide and lock incoming notifications
     </string>
     <string name="appLock_activity_notif_dialog_message_two">
-        Note: If you have permitted LockUp to hide notifications before, kindly disable and enable the permission
+        Note: If you have permitted FoxLock to hide notifications before, kindly disable and enable the permission
     </string>
     <string name="appLock_activity_usage_dialog_permit_text">YES PERMIT</string>
     <string name="appLock_activity_usage_dialog_cancel_text">NOT NOW</string>
     <string name="appLock_activity_usage_dialog_overlay_permission_request">
-        LockUp - Enable Permission for AppLock to lock apps
+        FoxLock - Enable Permission for AppLock to lock apps
     </string>
 
     <string name="appLock_activity_should_start_dialog_info">
         App Lock is disabled would you like to enable app lock ?
     </string>
-    <string name="appLock_activity_toggle_text">Find Lockup and switch on</string>
+    <string name="appLock_activity_toggle_text">Find FoxLock and switch on</string>
 
     <string name="appLock_activity_should_start_dialog_permit">START</string>
     <string name="appLock_activity_should_start_dialog_cancel">NOT NOW</string>
-    <string name="appLock_activity_prevent_uninstall_info_text">Deactivating may cause LockUp to be uninstalled or
+    <string name="appLock_activity_prevent_uninstall_info_text">Deactivating may cause FoxLock to be uninstalled or
         force stopped by other applications. Are you sure you want to proceed?</string>
     <string name="appLock_activity_prevent_uninstall_message_text">
-        Activate now to prevent unauthorized LockUp un-installation and force stops.
+        Activate now to prevent unauthorized FoxLock un-installation and force stops.
     </string>
     <string name="recommended_text_sixteen_up_one">Hide Notifications</string>
     <string name="recommended_unlock_alert_text">
-        Unlocking the app will allow unauthorized users to stop app lock or uninstall LockUp completely. Are you sure you want to unlock?
+        Unlocking the app will allow unauthorized users to stop app lock or uninstall FoxLock completely. Are you sure you want to unlock?
     </string>
     <string name="recommended_unlock_alert_dialog_positive_text">UNLOCK</string>
     <string name="recommended_unlock_alert_dialog_negative_text">CANCEL</string>
@@ -183,8 +190,8 @@
     <string name="facebook_app_id">361979890807218</string>
 
     <!-- Ad Ids -->
-    <string name="lock_ad_unit_id_one">3b8d2c8908d24f7e90c7f0e05132858b</string>
-    <string name="lock_ad_unit_id_two">6d14cdbc6797405da51ccc311b5a1731</string>
+    <string name="lock_ad_unit_id_one">3a76b20c208d44b482df3eb01f44b121</string>
+    <string name="lock_ad_unit_id_two">ee4874168b644bffaa2ff963151a2473</string>
     <string name="lock_interstitial_ad">ca-app-pub-2878097117146801/2088047771</string>
     <string name="lock_ad_unit_id_test">b2baecdb911b41b1a2d64ac5ee28e8b2</string>
     <string name="lock_ad_unit_id_test_2">20fc49b1fc7b42f7b928aabe788e37ec</string>
@@ -227,7 +234,7 @@
     <string name="vault_move_activity_move_complete">Operation Complete</string>
     <string name="vault_move_activity_delete_complete">Operation Complete</string>
     <string name="vault_move_activity_insufficient_space">Insufficient Space Available</string>
-    <string name="vault_move_activity_vault_redirect_message">Touch to open LockUp Vault</string>
+    <string name="vault_move_activity_vault_redirect_message">Touch to open FoxLock Vault</string>
     <string name="vault_move_activity_move_background">Move in background</string>
 
 
@@ -429,11 +436,11 @@
 
     <string-array name="tips_faq_headers_list">
         <item>HOW TO EARN</item>
-        <item>What is loyalty Bonus in LockUp?</item>
+        <item>What is loyalty Bonus in FoxLock?</item>
         <item>Why I need to signup for Getting loyalty Bonus?</item>
         <item>How much loyalty bonus I can earn each day?</item>
         <item>Can I get the current points back if I will change my phone?</item>
-        <item>Can I use LockUp in multiple devices?</item>
+        <item>Can I use FoxLock in multiple devices?</item>
         <item>Why am I getting Low points as compared to other user?</item>
         <item>I logged out from loyalty bonus &amp; after some days I again logged-in. But, why my current earned points are same as before?</item>
         <item>How can I redeem my loyalty Bonus?</item>
@@ -457,23 +464,23 @@
         <item>Always be logged in into Loyalty Bonus, otherwise we can’t track your usage hence won’t be able to credit your points.</item>
         <item>We recommend not to clear RAM or Recent App\'s from task manager.</item>
         <item>Keep the internet connection enabled all time</item>
-        <item>The videos in YouTube about LockUp except the video which is shown this App, are not our official videos. We request you to please avoid it, and only believe in what is written here and in Google Play.</item>
-        <item>LockUp has a Right to Remove or Ban your Account permanently for future use, if we find that you are doing such an activity which is against our and our associate’s policy.</item>
+        <item>The videos in YouTube about FoxLock except the video which is shown this App, are not our official videos. We request you to please avoid it, and only believe in what is written here and in Google Play.</item>
+        <item>FoxLock has a Right to Remove or Ban your Account permanently for future use, if we find that you are doing such an activity which is against our and our associate’s policy.</item>
         <item>Don’t worry if your points don’t update any particular day, it will be credit next time.</item>
         <item>Please read FAQ for more information</item>
     </string-array>
 
     <string-array name="tips_faq_answers_list">
         <item>once you signup for loyalty bonus, you will start earning points based on the usage of Applock, Vault and Slide lock. More you lock your Apps or enables slidelock more will be your earnings.</item>
-        <item>In order to give rewards to our loyal users, we need to track the usage of lockup. If you are not logged in, we can not track the usage and hence can\'t give you points.</item>
+        <item>In order to give rewards to our loyal users, we need to track the usage of foxlock. If you are not logged in, we can not track the usage and hence can\'t give you points.</item>
         <item>Loyalty bonus will give you free rewards which is hard to get. Each day bonus depends on many factors like the number of locked apps in your device, proper internet connection etc. We recommend you to lock more number of apps in Applock, avoid clearing RAM and recent apps from task manager.</item>
         <item>Yes, just logout from current device and use the same  login credentials in new device.</item>
         <item>We recommend not to use it with same email id in multiple devices. If you use it with same email, your loyalty bonus may decrease due to conflict.</item>
         <item>Your loyalty bonus depends on many aspects like daily usage, internet connectivity your Device manufacturer etc.</item>
         <item>For getting loyalty bonus regularly, you must be logged-in all time.  If not, we can not track your usage of Applock hence can\'t credit you points.</item>
         <item>Once you reach a minimum threshold of loyalty points, you can request to redeem it through PayPal or Paytm(For Indian User only). You will get the redeemed amount in your account within next 7 working days.</item>
-        <item>Granting Manual permission access depends on your Android version. If your device is having the Version  of lollipop and above then LockUp may ask you multiple permission for using it  which completely depends OS Version.</item>
-        <item>If lockUp stops working on clearing RAM/Recent Apps from task manager and not restarting automatically, then its must be a issue of your device Manufacturer or OS.</item>
+        <item>Granting Manual permission access depends on your Android version. If your device is having the Version  of lollipop and above then FoxLock may ask you multiple permission for using it  which completely depends OS Version.</item>
+        <item>If FoxLock stops working on clearing RAM/Recent Apps from task manager and not restarting automatically, then its must be a issue of your device Manufacturer or OS.</item>
         <item>Most of the apps like whatsApp, Facebook Triggers push notification which are private to you sometimes. By enabling it you can protect your privacy from snoopy eyes. To enable it you must lock the app in Applock first and then enable the same under Notification lock.</item>
     </string-array>
     <string name="faq_support_email_header">Contact us for support :</string>

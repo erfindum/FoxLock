@@ -78,7 +78,7 @@ public class MediaMoveInTask implements Runnable {
         this.viewWidth = prefs.getInt(AppLoaderActivity.MEDIA_THUMBNAIL_WIDTH_KEY,viewWidthPixel);
         this.viewHeight = prefs.getInt(AppLoaderActivity.MEDIA_THUMBNAIL_HEIGHT_KEY,viewHeightPixel);
         String databasePath = Environment.getExternalStorageDirectory()+ File.separator
-                +".lockup"+File.separator+"vault_db";
+                +".foxlock"+File.separator+"vault_db";
         vaultDatabaseHelper = new VaultDbHelper(context.getApplicationContext(),databasePath,null,1);
         vaultDb = vaultDatabaseHelper.getWritableDatabase();
     }
@@ -254,17 +254,17 @@ public class MediaMoveInTask implements Runnable {
                String originalFileName = dataPath.substring(dataPath.lastIndexOf(File.separator) + 1, dataPath.lastIndexOf("."));
                String extension = dataPath.substring(dataPath.lastIndexOf(".") + 1);
                String destPathDummy = Environment.getExternalStorageDirectory() + File.separator
-                       + ".lockup" + File.separator + getMediaFolder(mediaType) + File.separator
+                       + ".foxlock" + File.separator + getMediaFolder(mediaType) + File.separator
                        + uniqueBucketId + File.separator + originalFileName + "." + extension;
                String destPath = Environment.getExternalStorageDirectory() + File.separator
-                       + ".lockup" + File.separator + getMediaFolder(mediaType) + File.separator
+                       + ".foxlock" + File.separator + getMediaFolder(mediaType) + File.separator
                        + uniqueBucketId + File.separator + fileNames.get(cursor.getPosition());
                String thumbnailPathDummy = Environment.getExternalStorageDirectory() + File.separator
-                       + ".lockup" + File.separator + getMediaFolder(mediaType) + File.separator
+                       + ".foxlock" + File.separator + getMediaFolder(mediaType) + File.separator
                        + uniqueBucketId + File.separator + ".thumbs" + File.separator + uniqueBucketId
                        + File.separator + originalFileName + "." + "jpg";
                String thumbnailPath = Environment.getExternalStorageDirectory() + File.separator
-                       + ".lockup" + File.separator + getMediaFolder(mediaType) + File.separator
+                       + ".foxlock" + File.separator + getMediaFolder(mediaType) + File.separator
                        + uniqueBucketId + File.separator + ".thumbs" + File.separator + uniqueBucketId
                        + File.separator + fileNames.get(cursor.getPosition());
                currentVaultMediaFile = destPathDummy;

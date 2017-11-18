@@ -61,7 +61,7 @@ public class AppLockForegroundService extends Service {
                     .setColor(Color.parseColor("#2874F0"));
         }
         if(serviceType == MEDIA_MOVE_SERVICE){
-            notifBuilder.setContentTitle("LockUp Vault");
+            notifBuilder.setContentTitle("FoxLock Vault");
             notifBuilder.setContentText("Moving Media");
             notifBuilder.setOngoing(true)
                     .setAutoCancel(false)
@@ -70,7 +70,7 @@ public class AppLockForegroundService extends Service {
                     .setColor(Color.parseColor("#2874F0"));
         }
         if(serviceType == SHARE_MOVE_SERVICE){
-            notifBuilder.setContentTitle("LockUp Vault");
+            notifBuilder.setContentTitle("FoxLock Vault");
             notifBuilder.setContentText("Moving Media");
             notifBuilder.setOngoing(true)
                     .setAutoCancel(false)

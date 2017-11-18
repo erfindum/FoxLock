@@ -34,6 +34,7 @@ import android.widget.Toast;
 import com.smartfoxitsolutions.foxlock.dialogs.FingerPrintActivateDialog;
 import com.smartfoxitsolutions.foxlock.dialogs.GrantUsageAccessDialog;
 import com.smartfoxitsolutions.foxlock.dialogs.OverlayPermissionDialog;
+import com.smartfoxitsolutions.foxlock.dialogs.SettingsAlertDialog;
 import com.smartfoxitsolutions.foxlock.receivers.PreventUninstallReceiver;
 import com.smartfoxitsolutions.foxlock.services.AppLockingService;
 import com.smartfoxitsolutions.foxlock.services.GetPaletteColorService;
@@ -404,22 +405,26 @@ public class LockUpSettingsActivity extends AppCompatActivity {
         preventUninstallItem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               if(isPreventUninstallEnabled){
-                   DevicePolicyManager manager = (DevicePolicyManager) getSystemService(Context.DEVICE_POLICY_SERVICE);
-                   manager.removeActiveAdmin(new ComponentName(getBaseContext(),PreventUninstallReceiver.class));
-                   preventUninstallSwitch.setChecked(false);
-               }else{
-                   Intent enableDeviceIntent = new Intent(DevicePolicyManager.ACTION_ADD_DEVICE_ADMIN);
-                   ComponentName componentName = new ComponentName(getBaseContext(),PreventUninstallReceiver.class);
-                   enableDeviceIntent.putExtra(DevicePolicyManager.EXTRA_DEVICE_ADMIN, componentName);
-                   enableDeviceIntent.putExtra(DevicePolicyManager.EXTRA_ADD_EXPLANATION,
-                           getResources().getString(R.string.appLock_activity_prevent_uninstall_message_text));
-                   startActivity(enableDeviceIntent);
-                   shouldTrackUserPresence = false;
-               }
+                if(isPreventUninstallEnabled){
+                    DevicePolicyManager manager = (DevicePolicyManager) getSystemService(Context.DEVICE_POLICY_SERVICE);
+                    manager.removeActiveAdmin(new ComponentName(getBaseContext(),PreventUninstallReceiver.class));
+                    preventUninstallSwitch.setChecked(false);
+                }else{
+                    new SettingsAlertDialog().show(getSupportFragmentManager(),"prevent_uninstall_alert");
+                }
             }
         });
 
+    }
+
+    public void openDeviceAdminPermission(){
+        Intent enableDeviceIntent = new Intent(DevicePolicyManager.ACTION_ADD_DEVICE_ADMIN);
+        ComponentName componentName = new ComponentName(getBaseContext(),PreventUninstallReceiver.class);
+        enableDeviceIntent.putExtra(DevicePolicyManager.EXTRA_DEVICE_ADMIN, componentName);
+        enableDeviceIntent.putExtra(DevicePolicyManager.EXTRA_ADD_EXPLANATION,
+                getResources().getString(R.string.appLock_activity_prevent_uninstall_message_text));
+        startActivity(enableDeviceIntent);
+        shouldTrackUserPresence = false;
     }
 
     @Override

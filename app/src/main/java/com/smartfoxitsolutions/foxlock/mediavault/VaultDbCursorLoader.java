@@ -35,7 +35,7 @@ public class VaultDbCursorLoader extends AsyncTaskLoader<Cursor> {
         this.selectionArgs = selectionArgs;
         this.orderBy = orderBy;
         String databasePath = Environment.getExternalStorageDirectory()+ File.separator
-                +".lockup"+File.separator+"vault_db";
+                +".foxlock"+File.separator+"vault_db";
         dbHelper = new VaultDbHelper(context.getApplicationContext(),databasePath,null,version);
         loadReceiver = new LoadReceiver(new WeakReference<>(this));
     }
@@ -54,7 +54,7 @@ public class VaultDbCursorLoader extends AsyncTaskLoader<Cursor> {
     protected void onStartLoading() {
         super.onStartLoading();
         if(loadReceiver != null){
-            IntentFilter filter = new IntentFilter("com.smartfoxitsolutions.lockup.mediavault.FORCE_LOAD_LOADER");
+            IntentFilter filter = new IntentFilter("com.smartfoxitsolutions.foxlock.mediavault.FORCE_LOAD_LOADER");
             appContext.getApplicationContext().registerReceiver(loadReceiver,filter);
             receiverRegistered = true;
         }

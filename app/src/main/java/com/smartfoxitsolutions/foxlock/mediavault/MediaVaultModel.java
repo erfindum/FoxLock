@@ -7,7 +7,7 @@ package com.smartfoxitsolutions.foxlock.mediavault;
 public class MediaVaultModel {
 
 
-    public static String TABLE_NAME = "lockup_vault";
+    public static String TABLE_NAME = "foxlock_vault";
 
     public static String ID_COLUMN_NAME = "_id";
     public static String ORIGINAL_MEDIA_PATH = "original_media_path";

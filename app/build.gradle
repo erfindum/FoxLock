@@ -2,13 +2,13 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 23
-    buildToolsVersion "23.0.3"
+    buildToolsVersion '25.0.0'
 
     defaultConfig {
         applicationId "com.smartfoxitsolutions.foxlock"
         minSdkVersion 16
         targetSdkVersion 23
-        versionCode 20170810
+        versionCode 20170909
         versionName "1.0.1"
         vectorDrawables.useSupportLibrary =  true
     }
@@ -50,6 +50,7 @@ dependencies {
     compile('com.mopub:mopub-sdk-native-static:4.13.0@aar') {
         transitive = true
     }
+   // compile 'com.facebook.android:audience-network-sdk:4.25.0'
     compile('com.avocarrot:android-sdk:4.0.+')
     compile 'com.squareup.retrofit2:retrofit:2.1.0'
     compile 'com.squareup.retrofit2:converter-gson:2.1.0'

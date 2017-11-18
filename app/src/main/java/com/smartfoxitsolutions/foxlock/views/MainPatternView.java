@@ -106,8 +106,8 @@ public class MainPatternView extends FrameLayout implements PatternLockView.OnPa
         forgotPasswordButton = (Button) findViewById(R.id.main_pattern_lock_forgot_button);
         patternParent = (RelativeLayout) findViewById(R.id.main_pattern_lock_parent);
         AdView adView = (AdView) findViewById(R.id.main_pattern_lock_ad);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        adView.loadAd(adRequest);
+       /* AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest); */
         selectedPatternNode = "";
         SharedPreferences prefs = activity.getSharedPreferences(AppLockModel.APP_LOCK_PREFERENCE_NAME,Context.MODE_PRIVATE);
         isVibratorEnabled = prefs.getBoolean(LockUpSettingsActivity.VIBRATOR_ENABLED_PREFERENCE_KEY,false);

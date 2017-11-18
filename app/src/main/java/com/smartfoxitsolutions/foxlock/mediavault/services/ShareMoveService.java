@@ -99,7 +99,7 @@ public class ShareMoveService extends Service implements Handler.Callback{
 
     Notification getForegroundNotification(){
         NotificationCompat.Builder notifBuilder = new NotificationCompat.Builder(getBaseContext());
-        notifBuilder.setContentTitle("LockUp Vault");
+        notifBuilder.setContentTitle("FoxLock Vault");
         notifBuilder.setContentText("Moving Media");
         notifBuilder.setOngoing(true)
                 .setAutoCancel(false)

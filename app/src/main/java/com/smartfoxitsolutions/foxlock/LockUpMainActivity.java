@@ -125,10 +125,10 @@ public class LockUpMainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                startActivity(new Intent(getBaseContext(), LoyaltyBonusMain.class));
-                shouldTrackUserPresence = false;
+               /* startActivity(new Intent(getBaseContext(), LoyaltyBonusMain.class));
+                shouldTrackUserPresence = false; */
 
-                //Toast.makeText(LockUpMainActivity.this,"Coming Soon",Toast.LENGTH_SHORT).show();
+                Toast.makeText(LockUpMainActivity.this,"Coming Soon",Toast.LENGTH_SHORT).show();
             }
         });
         faqButton.setText(getString(R.string.main_screen_activity_faq_button_text));
